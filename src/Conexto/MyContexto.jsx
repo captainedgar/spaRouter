@@ -1,0 +1,32 @@
+import { Children, createContext, useState } from "react";
+
+export const MyContexto = createContext();
+
+
+export const Datos = ({Children})=>{
+    const reyes = [
+{
+  nombre: 'Atanagildo',
+
+},{
+  nombre: 'Ataulfo',
+},{
+  nombre: 'Ervigio',
+},
+{
+    nombre: 'Leogivildo',
+},
+{
+  nombre: 'Recesvinto',
+},
+{
+  nombre: 'Sisebuto'
+}
+]
+    const [kings, setKings] = useState(reyes);
+    return(
+        <MyContexto.Provider value={{kings, setKings}}>
+            {Children}
+        </MyContexto.Provider>
+    )
+}
