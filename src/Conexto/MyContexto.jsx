@@ -3,7 +3,7 @@ import { Children, createContext, useState } from "react";
 export const MyContexto = createContext();
 
 
-export const Datos = ({Children})=>{
+export const Datos = ({children})=>{
     const reyes = [
 {
   nombre: 'Atanagildo',
@@ -26,7 +26,7 @@ export const Datos = ({Children})=>{
     const [kings, setKings] = useState(reyes);
     return(
         <MyContexto.Provider value={{kings, setKings}}>
-            {Children}
+            {children}
         </MyContexto.Provider>
     )
 }

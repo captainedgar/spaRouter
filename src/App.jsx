@@ -1,9 +1,9 @@
 import {BrowserRouter, Routes,Route} from 'react-router-dom'
-import './App.css'
+
 import Nav from './Pagina/Nav'
 import { Datos } from './Conexto/MyContexto'
 function App() {
-  const url = 'https://www.html6.es/img/rey_'
+
 
 
   return (
@@ -13,7 +13,8 @@ function App() {
        <Nav/>
         <Routes>
          
-          <Route path='/src/Pagina/Pagina.jsx'></Route>
+          <Route path='/src/Pagina/Pagina.jsx' ></Route>
+          <Route path='/src/Pagina/:rey' ></Route>
         </Routes>
       </BrowserRouter>
 </Datos>

@@ -1,0 +1,15 @@
+.kings{
+    list-style: none;
+    padding: 10px 20px;
+    background-color:#000000;
+    
+   
+}
+ul{
+    display: flex;
+    
+   
+}
+li{
+    color: white;
+}
